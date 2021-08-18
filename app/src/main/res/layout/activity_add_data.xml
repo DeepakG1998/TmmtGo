@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/view_image"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_camera">
+
+            </ImageView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="5dp"
+                android:src="@android:drawable/ic_menu_camera"
+                app:fabCustomSize="48dp"
+                app:maxImageSize="30dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/student_class"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/class_name"
+            android:inputType="number"
+            android:paddingEnd="40dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/section"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/section"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/name_school"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/school_name"
+            tools:ignore="RtlHardcoded" />
+
+        <LinearLayout
+            android:id="@+id/gender1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/btn_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/male">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/btn_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/female">
+
+                </RadioButton>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/dobEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:hint="@string/dateOfBirth"
+                android:textColor="@color/black">
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/dob"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/teal_200"
+                app:layout_constraintRight_toRightOf="@+id/dobEdit"
+                app:srcCompat="@android:drawable/ic_menu_agenda"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/blood_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/blood_group" />
+
+        <EditText
+            android:id="@+id/name_father"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/father_s_name" />
+
+        <EditText
+            android:id="@+id/name_mother"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/mother_s_name" />
+
+        <EditText
+            android:id="@+id/number_parent"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/parent_s_contact_no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/address_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/address_1" />
+
+        <EditText
+            android:id="@+id/address_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/address_2" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/city" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/state" />
+
+        <EditText
+            android:id="@+id/zip_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/zip"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/number_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_corners"
+            android:hint="@string/emergency_contact_no"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp">
+
+            </Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
